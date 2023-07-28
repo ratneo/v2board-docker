@@ -1,7 +1,7 @@
 # v2board-docker
 🐳fast running v2board
 * Project
-https://github.com/hashcott/v2board-docker.git
+https://github.com/ratneo/v2board-docker.git
 
 ### Install `Docker` and `Docker-Compose`
 ```
@@ -15,7 +15,7 @@ curl -L https://github.com/docker/compose/releases/download/v2.10.2/docker-compo
 ### Pull stable version
 
 ```
-git clone https://github.com/hashcott/v2board-docker.git
+git clone https://github.com/ratneo/v2board-docker.git
 cd v2board-docker/
 git submodule update --init
 echo '  branch = master' >> .gitmodules
