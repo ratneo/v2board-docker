@@ -44,11 +44,14 @@ php artisan v2board:install
 数据库用户名：root
 数据库密码：v2boardisbest
 
-#Change permission
+# Enable low memory mode
+echo 'vm.overcommit_memory = 1' >> /etc/sysctl.conf
+
+# Change permission
 chmod -R 755 ${PWD}
 exit
 
-#Restart service
+# Restart service
 docker-compose restart
 
 ```
