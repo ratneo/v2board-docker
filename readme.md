@@ -28,12 +28,12 @@ git submodule update --remote
 ```
 # If you need to change the database name and password, modify and save in the docker-compose.yml file and then run the following command
 
-docker-compose up -d
+docker compose up -d
 ```
 
 ### Install V2Board
 ```
-docker-compose exec www bash
+docker compose exec www bash
 curl -sS https://getcomposer.org/installer | php
 php composer.phar install
 php artisan v2board:install
@@ -52,14 +52,14 @@ chmod -R 755 ${PWD}
 exit
 
 # Restart service
-docker-compose restart
+docker compose restart
 
 ```
 ### Update V2Board
 ```
 # Execute in the v2board-docker folder directory
 git submodule update --remote
-docker-compose exec www bash
+docker compose exec www bash
 rm -rf composer.lock composer.phar
 wget https://getcomposer.org/installer -O composer.phar
 php composer.phar
