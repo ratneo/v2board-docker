@@ -34,8 +34,7 @@ docker-compose up -d
 ### Install V2Board
 ```
 docker-compose exec www bash
-wget https://getcomposer.org/install -O composer.phar
-php composer.phar
+curl -sS https://getcomposer.org/installer | php
 php composer.phar install
 php artisan v2board:install
 
